@@ -2010,6 +2010,7 @@ options,
                     this.street_suffix(options).name;
                 break;
             case 'it':
+            case 'fr':
                 street = this.word({ syllables: options.syllables });
                 street = this.capitalize(street);
                 street = (options.short_suffix ?
@@ -4254,7 +4255,22 @@ options,
                 {name: 'Street', abbreviation: 'St'},
                 {name: 'Terrace', abbreviation: 'Ter'},
                 {name: 'Valley', abbreviation: 'Val'}
-            ]
+            ],
+            'fr': [
+                {name: 'Avenue', abbreviation: 'Av'},
+                {name: 'Boulevard', abbreviation: 'Bld'},
+                {name: 'Cour', abbreviation: 'Cr'},
+                {name: 'Route', abbreviation: 'Rte'},
+                {name: 'Rue', abbreviation: 'rue'},
+                {name: 'Manoir', abbreviation: 'Man'},
+                {name: 'Rond-Point du', abbreviation: 'Rd pt'},
+                {name: 'Parc', abbreviation: 'Parc'},
+                {name: 'Chemin', abbreviation: 'Ch'},
+                {name: 'Place', abbreviation: 'Pl'},
+                {name: 'Rivière', abbreviation: 'Riv'},
+                {name: 'Square', abbreviation: 'Sq'},
+                {name: 'Sentier', abbreviation: 'Sen'},
+            ],
         },
 
         months: [
