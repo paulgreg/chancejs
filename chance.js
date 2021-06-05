@@ -985,15 +985,15 @@
     Chance.prototype.profession = function (options) {
         options = initOptions(options);
         if(options.rank){
-            return this.pick(['Apprentice ', 'Junior ', 'Senior ', 'Lead ']) + this.pick(this.get("profession")[options.language || 'en']);
+            return this.pick(['Apprentice ', 'Junior ', 'Senior ', 'Lead ']) + this.pick(this.get("profession")[options.country || 'en']);
         } else{
-            return this.pick(this.get("profession")[options.language || 'en']);
+            return this.pick(this.get("profession")[options.country || 'en']);
         }
     };
 
     Chance.prototype.company = function (options){
         options = initOptions(options);
-        return this.pick(this.get("company")[options.language || 'en']);
+        return this.pick(this.get("company")[options.country || 'en']);
     };
 
     Chance.prototype.gender = function (options) {
